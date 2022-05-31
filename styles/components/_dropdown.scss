@@ -1,0 +1,23 @@
+.dropdown-li {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: 3rem;
+    width: 10rem;
+    background-color: darken(color(tertiary), 5%);
+    @include navigation;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.2rem;
+
+    &-item {
+        margin: 0.5rem 0;
+    }
+
+    &-link {
+        font-weight: 300;
+        font-size: size(xs);
+    }
+}
