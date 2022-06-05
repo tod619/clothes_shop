@@ -82,6 +82,14 @@ html {
   }
 }
 
+@media (max-width: 1000px) {
+  .first-nav {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 5;
+    grid-column: 5 / 10;
+  }
+}
+
 .second-nav {
   -ms-grid-column: 3;
   -ms-grid-column-span: 5;
@@ -119,6 +127,14 @@ html {
   color: #999999;
 }
 
+@media (max-width: 1000px) {
+  .second-nav {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 7;
+    grid-column: 2 / 9;
+  }
+}
+
 .slideshow {
   grid-column: 1 / -1;
   -ms-grid-row: 2;
@@ -132,6 +148,12 @@ html {
 @media (max-width: 1200px) {
   .slideshow {
     height: 70vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .slideshow {
+    height: 60vh;
   }
 }
 
@@ -161,6 +183,12 @@ html {
   left: 6rem;
   max-width: 40rem;
   padding: 5rem;
+}
+
+@media (max-width: 1000px) {
+  .slideshow-content {
+    padding: 2rem;
+  }
 }
 
 .slideshow-content h2 {
@@ -311,14 +339,32 @@ html {
   transition: all 1s 0.5s;
 }
 
+@media (max-width: 1000px) {
+  .product-description {
+    padding: 1rem;
+  }
+}
+
 .product-description-heading {
   font-size: 3rem;
+}
+
+@media (max-width: 1000px) {
+  .product-description-heading {
+    font-size: 2rem;
+  }
 }
 
 .product-description-price {
   font-size: 2.5rem;
   font-weight: 300;
   margin: 1rem 0;
+}
+
+@media (max-width: 1000px) {
+  .product-description-price {
+    font-size: 1.8rem;
+  }
 }
 
 .product-description-price span {
@@ -333,6 +379,12 @@ html {
   padding: 0.5rem 1rem;
   border: 0.1rem solid #f5b149;
   background-color: #666666;
+}
+
+@media (max-width: 1000px) {
+  .product-description-btn {
+    padding: 0.2rem 0.5rem;
+  }
 }
 
 .products-btn {
@@ -362,6 +414,13 @@ html {
           align-items: center;
   padding: 5rem 0;
   border-top: 0.1rem solid #333;
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .footer-nav-heading {
@@ -412,6 +471,16 @@ html {
   font-size: 3rem;
   color: #333;
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .contact {
+    padding: 0 10rem;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 4rem;
+  }
 }
 
 .contact-paragraph {
@@ -545,9 +614,7 @@ html {
 }
 
 .heading {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 3;
-  grid-column: 4 / 7;
+  grid-column: 1 / -1;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;

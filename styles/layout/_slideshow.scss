@@ -9,6 +9,10 @@
         height: 70vh;
     }
 
+    @include response(lg) {
+        height: 60vh;
+    }
+
     &-slide {
         position: absolute;
         top: 0;
@@ -33,6 +37,10 @@
         left: 6rem;
         max-width: 40rem;
         padding: 5rem;
+
+        @include response(lg) {
+            padding: 2rem;
+        }
 
         h2 {
             font-size: size(xl) + 1.2rem;
