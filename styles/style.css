@@ -8,6 +8,12 @@ html {
   font-size: 62.5%;
 }
 
+@media (max-width: 760px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
 .container {
   display: -ms-grid;
   display: grid;
@@ -90,6 +96,14 @@ html {
   }
 }
 
+@media (max-width: 760px) {
+  .first-nav {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 6;
+    grid-column: 4 / 10;
+  }
+}
+
 .second-nav {
   -ms-grid-column: 3;
   -ms-grid-column-span: 5;
@@ -135,6 +149,12 @@ html {
   }
 }
 
+@media (max-width: 760px) {
+  .second-nav {
+    grid-column: 1 / -1;
+  }
+}
+
 .slideshow {
   grid-column: 1 / -1;
   -ms-grid-row: 2;
@@ -154,6 +174,12 @@ html {
 @media (max-width: 1000px) {
   .slideshow {
     height: 60vh;
+  }
+}
+
+@media (max-width: 760px) {
+  .slideshow {
+    height: 50vh;
   }
 }
 
@@ -473,6 +499,12 @@ html {
   text-align: center;
 }
 
+@media (max-width: 760px) {
+  .contact-heading {
+    font-size: 2.5rem;
+  }
+}
+
 @media (max-width: 1000px) {
   .contact {
     padding: 0 10rem;
@@ -489,10 +521,19 @@ html {
   text-align: center;
 }
 
+@media (max-width: 760px) {
+  .contact-paragraph {
+    font-size: 2rem;
+  }
+}
+
 .contact .inputs-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact .inputs-group input {
